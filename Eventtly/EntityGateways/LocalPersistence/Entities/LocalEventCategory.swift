@@ -14,5 +14,6 @@ class LocalEventCategory: Object {
     
     @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
+    let events = List<LocalEvent>()
     
 }

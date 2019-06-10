@@ -23,6 +23,8 @@
 		BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2F22AE902A00F00B3F /* EventsManager.swift */; };
 		BC578B3522AE95C000F00B3F /* LocalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3422AE95C000F00B3F /* LocalEvent.swift */; };
 		BC578B3722AE95CD00F00B3F /* LocalEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3622AE95CD00F00B3F /* LocalEventCategory.swift */; };
+		BC578B3922AE968F00F00B3F /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3822AE968F00F00B3F /* RealmConfiguration.swift */; };
+		BC578B3B22AE96A900F00B3F /* EventsRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3A22AE96A900F00B3F /* EventsRealmManager.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		BC578B2F22AE902A00F00B3F /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		BC578B3422AE95C000F00B3F /* LocalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEvent.swift; sourceTree = "<group>"; };
 		BC578B3622AE95CD00F00B3F /* LocalEventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEventCategory.swift; sourceTree = "<group>"; };
+		BC578B3822AE968F00F00B3F /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
+		BC578B3A22AE96A900F00B3F /* EventsRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,8 @@
 		BC578B3322AE95B100F00B3F /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				BC578B3822AE968F00F00B3F /* RealmConfiguration.swift */,
+				BC578B3A22AE96A900F00B3F /* EventsRealmManager.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC578B3922AE968F00F00B3F /* RealmConfiguration.swift in Sources */,
 				BC578B1A22AE876100F00B3F /* Event.swift in Sources */,
 				BC578B1C22AE883C00F00B3F /* EventsGateway.swift in Sources */,
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
@@ -397,6 +404,7 @@
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
 				BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */,
 				BC578B3722AE95CD00F00B3F /* LocalEventCategory.swift in Sources */,
+				BC578B3B22AE96A900F00B3F /* EventsRealmManager.swift in Sources */,
 				BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */,
 				BC578B2A22AE8E1200F00B3F /* EventsRouter.swift in Sources */,
 				BC578B3522AE95C000F00B3F /* LocalEvent.swift in Sources */,
