@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Event {
+    
+    var id: String
+    var name: String
+    var longitude: String
+    var latitude: String
+    var end_date: String
+    var start_date: String
+    var cover: String
+    
+}

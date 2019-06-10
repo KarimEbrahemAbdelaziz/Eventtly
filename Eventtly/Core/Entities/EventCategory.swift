@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct EventCategory {
+    
+    var id: String
+    var name: String
+    
+}
