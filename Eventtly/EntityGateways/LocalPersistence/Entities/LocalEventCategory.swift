@@ -14,6 +14,18 @@ class LocalEventCategory: Object {
     
     @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
-    let events = List<LocalEvent>()
+    var events = List<LocalEvent>()
     
+    convenience init(eventCategory: EventCategory) {
+        self.init()
+        self.id = eventCategory.id
+        self.name = eventCategory.name
+    }
+    
+}
+
+extension LocalEventCategory {
+    var eventCategory: EventCategory {
+        return EventCategory(id: self.id, name: self.name)
+    }
 }

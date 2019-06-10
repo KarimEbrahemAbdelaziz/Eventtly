@@ -13,5 +13,5 @@ typealias FetchEventsEntityGatewayCompletionHandler = (_ categories: Result<[Eve
 
 protocol EventsGateway {
     func fetchCategories(completionHandler: @escaping FetchEventsCategoriesEntityGatewayCompletionHandler)
-    func fetchEvents(completionHandler: @escaping FetchEventsEntityGatewayCompletionHandler)
+    func fetchEvents(ofType type: String, atPage page: String, completionHandler: @escaping FetchEventsEntityGatewayCompletionHandler)
 }

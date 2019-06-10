@@ -13,7 +13,7 @@ typealias DisplayEventsCategoriesUseCaseCompletionHandler = (_ movies: Result<[E
 
 protocol DisplayEventsUseCase {
     func displayEventsCategories(completionHandler: @escaping DisplayEventsCategoriesUseCaseCompletionHandler)
-    func displayEvents(completionHandler: @escaping DisplayEventsUseCaseCompletionHandler)
+    func displayEvents(ofType type: String, atPage page: String, completionHandler: @escaping DisplayEventsUseCaseCompletionHandler)
 }
 
 class DisplayEventsUseCaseImplementation: DisplayEventsUseCase {
@@ -31,10 +31,10 @@ class DisplayEventsUseCaseImplementation: DisplayEventsUseCase {
         }
     }
     
-    func displayEvents(completionHandler: @escaping DisplayEventsUseCaseCompletionHandler) {
-        self.eventsGateway.fetchEvents { result in
+    func displayEvents(ofType type: String, atPage page: String, completionHandler: @escaping DisplayEventsUseCaseCompletionHandler) {
+        self.eventsGateway.fetchEvents(ofType: type, atPage: page, completionHandler: { result in
             completionHandler(result)
-        }
+        })
     }
 
 }
