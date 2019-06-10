@@ -32,7 +32,7 @@ class DisplayEventsUseCaseImplementation: DisplayEventsUseCase {
     }
     
     func displayEvents(completionHandler: @escaping DisplayEventsUseCaseCompletionHandler) {
-        self.eventsGateway.fetchEventDetails { result in
+        self.eventsGateway.fetchEvents { result in
             completionHandler(result)
         }
     }

@@ -9,9 +9,9 @@
 import Foundation
 
 typealias FetchEventsCategoriesEntityGatewayCompletionHandler = (_ categories: Result<[EventCategory], Error>) -> Void
-typealias FetchEventDetailsEntityGatewayCompletionHandler = (_ categories: Result<[Event], Error>) -> Void
+typealias FetchEventsEntityGatewayCompletionHandler = (_ categories: Result<[Event], Error>) -> Void
 
 protocol EventsGateway {
     func fetchCategories(completionHandler: @escaping FetchEventsCategoriesEntityGatewayCompletionHandler)
-    func fetchEventDetails(completionHandler: @escaping FetchEventDetailsEntityGatewayCompletionHandler)
+    func fetchEvents(completionHandler: @escaping FetchEventsEntityGatewayCompletionHandler)
 }
