@@ -12,9 +12,13 @@
 		BC578B0422AE7F4800F00B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0222AE7F4800F00B3F /* Main.storyboard */; };
 		BC578B0622AE7F4900F00B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0522AE7F4900F00B3F /* Assets.xcassets */; };
 		BC578B0922AE7F4900F00B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */; };
+		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2849F187B52F654DA1BD0573 /* Pods-Eventtly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventtly.release.xcconfig"; path = "Target Support Files/Pods-Eventtly/Pods-Eventtly.release.xcconfig"; sourceTree = "<group>"; };
+		48F8349C3F0EDAAAEF463F53 /* Pods-Eventtly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventtly.debug.xcconfig"; path = "Target Support Files/Pods-Eventtly/Pods-Eventtly.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventtly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC578AFB22AE7F4800F00B3F /* Eventtly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventtly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC578AFE22AE7F4800F00B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC578B0022AE7F4800F00B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A4515F7517CAC1B852108B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A4151281A99CB0AAE025C44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48F8349C3F0EDAAAEF463F53 /* Pods-Eventtly.debug.xcconfig */,
+				2849F187B52F654DA1BD0573 /* Pods-Eventtly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC578AF222AE7F4800F00B3F = {
 			isa = PBXGroup;
 			children = (
 				BC578AFD22AE7F4800F00B3F /* Eventtly */,
 				BC578AFC22AE7F4800F00B3F /* Products */,
+				8A4151281A99CB0AAE025C44 /* Pods */,
+				44A4515F7517CAC1B852108B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC578B0D22AE7F4900F00B3F /* Build configuration list for PBXNativeTarget "Eventtly" */;
 			buildPhases = (
+				66F1B6B87AE4E121E629968F /* [CP] Check Pods Manifest.lock */,
+				BC578B1022AE839600F00B3F /* Swiftlint */,
 				BC578AF722AE7F4800F00B3F /* Sources */,
 				BC578AF822AE7F4800F00B3F /* Frameworks */,
 				BC578AF922AE7F4800F00B3F /* Resources */,
+				AC87738D5260662C7E67CF74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66F1B6B87AE4E121E629968F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventtly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC87738D5260662C7E67CF74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eventtly/Pods-Eventtly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eventtly/Pods-Eventtly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC578B1022AE839600F00B3F /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC578AF722AE7F4800F00B3F /* Sources */ = {
@@ -280,10 +382,12 @@
 		};
 		BC578B0E22AE7F4900F00B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F8349C3F0EDAAAEF463F53 /* Pods-Eventtly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Eventtly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +395,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karimebrahem.Eventtly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BC578B0F22AE7F4900F00B3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2849F187B52F654DA1BD0573 /* Pods-Eventtly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Eventtly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karimebrahem.Eventtly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
