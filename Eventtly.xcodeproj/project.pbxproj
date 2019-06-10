@@ -21,6 +21,8 @@
 		BC578B2A22AE8E1200F00B3F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2922AE8E1200F00B3F /* EventsRouter.swift */; };
 		BC578B2E22AE8FE800F00B3F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2D22AE8FE800F00B3F /* URL+Extensions.swift */; };
 		BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2F22AE902A00F00B3F /* EventsManager.swift */; };
+		BC578B3522AE95C000F00B3F /* LocalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3422AE95C000F00B3F /* LocalEvent.swift */; };
+		BC578B3722AE95CD00F00B3F /* LocalEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B3622AE95CD00F00B3F /* LocalEventCategory.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		BC578B2922AE8E1200F00B3F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		BC578B2D22AE8FE800F00B3F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		BC578B2F22AE902A00F00B3F /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		BC578B3422AE95C000F00B3F /* LocalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEvent.swift; sourceTree = "<group>"; };
+		BC578B3622AE95CD00F00B3F /* LocalEventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEventCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		BC578B1F22AE8BE800F00B3F /* EntityGateways */ = {
 			isa = PBXGroup;
 			children = (
+				BC578B3122AE959200F00B3F /* LocalPersistence */,
 				BC578B2022AE8BF700F00B3F /* API */,
 			);
 			path = EntityGateways;
@@ -209,6 +214,31 @@
 				BC578B2D22AE8FE800F00B3F /* URL+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC578B3122AE959200F00B3F /* LocalPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B3322AE95B100F00B3F /* Gateways */,
+				BC578B3222AE95A700F00B3F /* Entities */,
+			);
+			path = LocalPersistence;
+			sourceTree = "<group>";
+		};
+		BC578B3222AE95A700F00B3F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B3622AE95CD00F00B3F /* LocalEventCategory.swift */,
+				BC578B3422AE95C000F00B3F /* LocalEvent.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC578B3322AE95B100F00B3F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,8 +396,10 @@
 				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
 				BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */,
+				BC578B3722AE95CD00F00B3F /* LocalEventCategory.swift in Sources */,
 				BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */,
 				BC578B2A22AE8E1200F00B3F /* EventsRouter.swift in Sources */,
+				BC578B3522AE95C000F00B3F /* LocalEvent.swift in Sources */,
 				BC578B2E22AE8FE800F00B3F /* URL+Extensions.swift in Sources */,
 				BC578B2622AE8C7000F00B3F /* APIEventCategory.swift in Sources */,
 				BC578B1E22AE893500F00B3F /* DisplayEvents.swift in Sources */,
