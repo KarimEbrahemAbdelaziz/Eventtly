@@ -12,6 +12,8 @@
 		BC578B0422AE7F4800F00B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0222AE7F4800F00B3F /* Main.storyboard */; };
 		BC578B0622AE7F4900F00B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0522AE7F4900F00B3F /* Assets.xcassets */; };
 		BC578B0922AE7F4900F00B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */; };
+		BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1722AE873E00F00B3F /* EventCategory.swift */; };
+		BC578B1A22AE876100F00B3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1922AE876100F00B3F /* Event.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		BC578B0522AE7F4900F00B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC578B0822AE7F4900F00B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC578B0A22AE7F4900F00B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC578B1722AE873E00F00B3F /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
+		BC578B1922AE876100F00B3F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +82,64 @@
 		BC578AFD22AE7F4800F00B3F /* Eventtly */ = {
 			isa = PBXGroup;
 			children = (
-				BC578AFE22AE7F4800F00B3F /* AppDelegate.swift */,
+				BC578B1322AE870200F00B3F /* Core */,
+				BC578B1222AE86EA00F00B3F /* Resources */,
+				BC578B1122AE86E100F00B3F /* Application */,
 				BC578B0022AE7F4800F00B3F /* ViewController.swift */,
 				BC578B0222AE7F4800F00B3F /* Main.storyboard */,
-				BC578B0522AE7F4900F00B3F /* Assets.xcassets */,
 				BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */,
-				BC578B0A22AE7F4900F00B3F /* Info.plist */,
 			);
 			path = Eventtly;
+			sourceTree = "<group>";
+		};
+		BC578B1122AE86E100F00B3F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B0A22AE7F4900F00B3F /* Info.plist */,
+				BC578AFE22AE7F4800F00B3F /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC578B1222AE86EA00F00B3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B0522AE7F4900F00B3F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC578B1322AE870200F00B3F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B1622AE872300F00B3F /* UseCases */,
+				BC578B1522AE871D00F00B3F /* Gateways */,
+				BC578B1422AE871600F00B3F /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BC578B1422AE871600F00B3F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B1722AE873E00F00B3F /* EventCategory.swift */,
+				BC578B1922AE876100F00B3F /* Event.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC578B1522AE871D00F00B3F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		BC578B1622AE872300F00B3F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC578B1A22AE876100F00B3F /* Event.swift in Sources */,
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
+				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Eventtly/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Eventtly/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Eventtly/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Eventtly/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
