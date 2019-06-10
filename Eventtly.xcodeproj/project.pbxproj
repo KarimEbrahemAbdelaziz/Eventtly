@@ -15,6 +15,7 @@
 		BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1722AE873E00F00B3F /* EventCategory.swift */; };
 		BC578B1A22AE876100F00B3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1922AE876100F00B3F /* Event.swift */; };
 		BC578B1C22AE883C00F00B3F /* EventsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1B22AE883C00F00B3F /* EventsGateway.swift */; };
+		BC578B1E22AE893500F00B3F /* DisplayEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1D22AE893500F00B3F /* DisplayEvents.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		BC578B1722AE873E00F00B3F /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
 		BC578B1922AE876100F00B3F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BC578B1B22AE883C00F00B3F /* EventsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsGateway.swift; sourceTree = "<group>"; };
+		BC578B1D22AE893500F00B3F /* DisplayEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		BC578B1622AE872300F00B3F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				BC578B1D22AE893500F00B3F /* DisplayEvents.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
 				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
+				BC578B1E22AE893500F00B3F /* DisplayEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
