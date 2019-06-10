@@ -49,6 +49,7 @@ identifier_name:
   severity: warning
 
 disabled_rules:
+  - type_name
   - line_length
   - trailing_whitespace
   - force_cast

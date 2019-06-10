@@ -86,9 +86,9 @@
 		BC578AFD22AE7F4800F00B3F /* Eventtly */ = {
 			isa = PBXGroup;
 			children = (
-				BC578B1322AE870200F00B3F /* Core */,
-				BC578B1222AE86EA00F00B3F /* Resources */,
 				BC578B1122AE86E100F00B3F /* Application */,
+				BC578B1222AE86EA00F00B3F /* Resources */,
+				BC578B1322AE870200F00B3F /* Core */,
 				BC578B0022AE7F4800F00B3F /* ViewController.swift */,
 				BC578B0222AE7F4800F00B3F /* Main.storyboard */,
 				BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */,
