@@ -6,7 +6,7 @@
 //  Copyright © 2019 Karim Ebrahem. All rights reserved.
 //
 
-//swiftlint:disable all
+// swiftlint:disable all
 import Alamofire
 import Foundation
 

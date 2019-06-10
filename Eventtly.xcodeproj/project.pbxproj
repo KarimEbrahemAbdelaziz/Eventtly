@@ -20,6 +20,7 @@
 		BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2722AE8C7900F00B3F /* APIEvent.swift */; };
 		BC578B2A22AE8E1200F00B3F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2922AE8E1200F00B3F /* EventsRouter.swift */; };
 		BC578B2E22AE8FE800F00B3F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2D22AE8FE800F00B3F /* URL+Extensions.swift */; };
+		BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2F22AE902A00F00B3F /* EventsManager.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		BC578B2722AE8C7900F00B3F /* APIEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEvent.swift; sourceTree = "<group>"; };
 		BC578B2922AE8E1200F00B3F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		BC578B2D22AE8FE800F00B3F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		BC578B2F22AE902A00F00B3F /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BC578B2922AE8E1200F00B3F /* EventsRouter.swift */,
+				BC578B2F22AE902A00F00B3F /* EventsManager.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
 				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
+				BC578B3022AE902A00F00B3F /* EventsManager.swift in Sources */,
 				BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */,
 				BC578B2A22AE8E1200F00B3F /* EventsRouter.swift in Sources */,
 				BC578B2E22AE8FE800F00B3F /* URL+Extensions.swift in Sources */,

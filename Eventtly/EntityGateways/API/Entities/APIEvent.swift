@@ -37,6 +37,6 @@ class APIEvent: Mappable {
 
 extension APIEvent {
     var event: Event {
-        return Event(id: self.id!, name: self.name ?? "", longitude: self.longitude ?? "", latitude: self.latitude ?? "", endDate: self.endDate ?? "", startDate: self.startDate ?? "", cover: self.cover ?? "")
+        return Event(id: self.id ?? "", name: self.name ?? "", longitude: self.longitude ?? "", latitude: self.latitude ?? "", endDate: self.endDate ?? "", startDate: self.startDate ?? "", cover: self.cover ?? "")
     }
 }

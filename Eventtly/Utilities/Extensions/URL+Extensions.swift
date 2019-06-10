@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable all
 extension URL {
     
     func appending(_ queryItem: String, value: String?) -> URL {
@@ -30,3 +31,4 @@ extension URL {
         return urlComponents.url!
     }
 }
+// swiftlint:enable all
