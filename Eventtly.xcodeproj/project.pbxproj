@@ -16,6 +16,8 @@
 		BC578B1A22AE876100F00B3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1922AE876100F00B3F /* Event.swift */; };
 		BC578B1C22AE883C00F00B3F /* EventsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1B22AE883C00F00B3F /* EventsGateway.swift */; };
 		BC578B1E22AE893500F00B3F /* DisplayEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1D22AE893500F00B3F /* DisplayEvents.swift */; };
+		BC578B2622AE8C7000F00B3F /* APIEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2522AE8C7000F00B3F /* APIEventCategory.swift */; };
+		BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B2722AE8C7900F00B3F /* APIEvent.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		BC578B1922AE876100F00B3F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BC578B1B22AE883C00F00B3F /* EventsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsGateway.swift; sourceTree = "<group>"; };
 		BC578B1D22AE893500F00B3F /* DisplayEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEvents.swift; sourceTree = "<group>"; };
+		BC578B2522AE8C7000F00B3F /* APIEventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEventCategory.swift; sourceTree = "<group>"; };
+		BC578B2722AE8C7900F00B3F /* APIEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				BC578B1122AE86E100F00B3F /* Application */,
 				BC578B1222AE86EA00F00B3F /* Resources */,
 				BC578B1322AE870200F00B3F /* Core */,
+				BC578B1F22AE8BE800F00B3F /* EntityGateways */,
 				BC578B0022AE7F4800F00B3F /* ViewController.swift */,
 				BC578B0222AE7F4800F00B3F /* Main.storyboard */,
 				BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */,
@@ -146,6 +151,39 @@
 				BC578B1D22AE893500F00B3F /* DisplayEvents.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BC578B1F22AE8BE800F00B3F /* EntityGateways */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B2022AE8BF700F00B3F /* API */,
+			);
+			path = EntityGateways;
+			sourceTree = "<group>";
+		};
+		BC578B2022AE8BF700F00B3F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B2322AE8C1200F00B3F /* Gateways */,
+				BC578B2222AE8C0B00F00B3F /* Entities */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC578B2222AE8C0B00F00B3F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC578B2522AE8C7000F00B3F /* APIEventCategory.swift */,
+				BC578B2722AE8C7900F00B3F /* APIEvent.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC578B2322AE8C1200F00B3F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +340,8 @@
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
 				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
+				BC578B2822AE8C7900F00B3F /* APIEvent.swift in Sources */,
+				BC578B2622AE8C7000F00B3F /* APIEventCategory.swift in Sources */,
 				BC578B1E22AE893500F00B3F /* DisplayEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
