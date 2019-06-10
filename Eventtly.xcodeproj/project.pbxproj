@@ -14,6 +14,7 @@
 		BC578B0922AE7F4900F00B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC578B0722AE7F4900F00B3F /* LaunchScreen.storyboard */; };
 		BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1722AE873E00F00B3F /* EventCategory.swift */; };
 		BC578B1A22AE876100F00B3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1922AE876100F00B3F /* Event.swift */; };
+		BC578B1C22AE883C00F00B3F /* EventsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC578B1B22AE883C00F00B3F /* EventsGateway.swift */; };
 		CE7BFCCFA7E7E8889499F10E /* Pods_Eventtly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2FE67E40FE2560483517ED /* Pods_Eventtly.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		BC578B0A22AE7F4900F00B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC578B1722AE873E00F00B3F /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
 		BC578B1922AE876100F00B3F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BC578B1B22AE883C00F00B3F /* EventsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		BC578B1522AE871D00F00B3F /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				BC578B1B22AE883C00F00B3F /* EventsGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC578B1A22AE876100F00B3F /* Event.swift in Sources */,
+				BC578B1C22AE883C00F00B3F /* EventsGateway.swift in Sources */,
 				BC578B0122AE7F4800F00B3F /* ViewController.swift in Sources */,
 				BC578B1822AE873E00F00B3F /* EventCategory.swift in Sources */,
 				BC578AFF22AE7F4800F00B3F /* AppDelegate.swift in Sources */,
